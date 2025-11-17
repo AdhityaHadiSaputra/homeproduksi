@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepuluh Sebelas - Vendor Kaos Custom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header sticky">
+        <div class="container-max">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="public/images/design-mode/logo.jpg" alt="SEPULUHSEBELAS" class="logo-img"></a>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="#" class="nav-link">HOME</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn">
+                            DETAIL PRODUK
+                            <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="detail-bahan.html" class="dropdown-item">Bahan Kaos</a>
+                            <a href="detail-ukuran.html" class="dropdown-item">Ukuran & Fit</a>
+                            <a href="detail-sablon.html" class="dropdown-item">Teknik Sablon</a>
+                        </div>
+                    </div>
+                    <a href="cara-pesan.html" class="nav-link">CARA PESAN</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="faq.html" class="btn btn-primary hidden-mobile">HUBUNGI KAMI</a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="#" class="mobile-nav-link">HOME</a>
+                <div class="mobile-dropdown">
+                    <div class="mobile-dropdown-title">DETAIL PRODUK</div>
+                    <div class="mobile-dropdown-items">
+                        <a href="#" class="mobile-nav-link">Bahan Kaos</a>
+                        <a href="#" class="mobile-nav-link">Ukuran & Fit</a>
+                        <a href="#" class="mobile-nav-link">Teknik Sablon</a>
+                    </div>
+                </div>
+                <a href="#" class="mobile-nav-link">CARA PESAN</a>
+                <a href="#" class="btn btn-primary btn-block">HUBUNGI KAMI</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-max">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="slide" id="slide0">
+                        <h1 class="hero-title">Vendor Kaos, Polo dan Seragam</h1>
+                        <p class="hero-description">Wujudkan seragam kaos custom impian Anda di Sepuluh Sebelas Rumah Produksi, brand kreatif asal Bandung yang dikenal akan kualitasnya.</p>
+                        <a href="cara-pesan.html" class="btn btn-dark">Pesan Sekarang</a>
+                    </div>
+                    <div class="slide" id="slide1" style="display: none;">
+                        <h1 class="hero-title">Kapasitas Produksi Besar</h1>
+                        <p class="hero-description">Mampu memproduksi dalam jumlah besar dengan kualitas terjaga.</p>
+                        <a href="cara-pesan.html" class="btn btn-dark">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="hero-slider">
+                    <div class="slider-image" id="slider0" style="opacity: 1;">
+                        <img src="public/images/design-mode/rumah-produksi.jpg" alt="Rumah Produksi" class="slide-img">
+                    </div>
+                    <div class="slider-image" id="slider1" style="opacity: 0;">
+                        <img src="public/images/design-mode/produksi-besar.jpg" alt="Produksi Besar" class="slide-img">
+                    </div>
+                    <button class="slider-btn slider-prev" id="sliderPrev">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="slider-btn slider-next" id="sliderNext">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="slider-dots">
+                <button class="dot active" onclick="goToSlide(0)"></button>
+                <button class="dot" onclick="goToSlide(1)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="clients-section">
+        <div class="container-max">
+            <h2 class="section-title">Dipercaya Oleh</h2>
+            <div class="underline"></div>
+            <div class="clients-grid">
+                <div class="client-item">
+                    <img src="public/kanitra.jpg" alt="Kanitra Koperasi" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="public/chitose.jpg" alt="Chitose" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="public/ut-logo.png" alt="United Tractors" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="public/sanbe-farma.jpg" alt="PT Sanbe Farma" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container-max">
+            <div class="experience-header">
+                <h2 class="section-title-lg">Sepuluh Sebelas Rumah Produksi Telah Berpengalaman</h2>
+                <p class="section-title-lg highlight">Selama 2 Tahun</p>
+                <div class="underline-lg"></div>
+            </div>
+
+            <!-- Fast Service -->
+            <div class="experience-grid">
+                <div class="experience-image">
+                    <img src="public/images/design-mode/workshop.jpg" alt="Workshop" class="exp-img">
+                </div>
+                <div class="experience-content">
+                    <div class="feature-box">
+                        <div class="feature-icon yellow">⚡</div>
+                        <h3 class="feature-title">Cepat, Tepat, Terpercaya</h3>
+                    </div>
+                    <p class="feature-description">Bikin kaos polo Anda dalam waktu yang terbatas dapat kami penuhi dengan cepat dan tepat. Puluhan tenaga jahit ahli, kami persiapkan untuk kebutuhan mendesak Anda.</p>
+                    <ul class="feature-list">
+                        <li><span class="checkmark">✓</span> Pengerjaan cepat dengan hasil berkualitas</li>
+                        <li><span class="checkmark">✓</span> Tim profesional dan berpengalaman</li>
+                        <li><span class="checkmark">✓</span> Kualitas premium dengan harga terjangkau</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mass Production -->
+            <div class="experience-grid reversed">
+                <div class="experience-content">
+                    <div class="feature-box">
+                        <div class="feature-icon green">📦</div>
+                        <h3 class="feature-title">Produksi Massal Kapasitas Besar</h3>
+                    </div>
+                    <p class="feature-description">Kebutuhan Anda dalam jumlah besar tidak menjadi masalah. Kapasitas produksi yang besar kami persiapkan untuk Anda.</p>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-number">5.000+</div>
+                            <div class="stat-label">Kapasitas per minggu</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Mesin modern</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-image">
+                    <img src="public/images/design-mode/produksi-masal.jpg" alt="Produksi Massal" class="exp-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us-section">
+        <div class="container-max">
+            <h2 class="section-title-lg">Mengapa Memilih Kami</h2>
+            <p class="section-subtitle">Kami menawarkan layanan terbaik dengan kualitas premium untuk memenuhi kebutuhan kaos custom Anda</p>
+            <div class="underline"></div>
+
+            <div class="why-us-grid">
+                <div class="why-us-card">
+                    <div class="card-icon">⏱️</div>
+                    <h3>Pengerjaan Cepat</h3>
+                    <p>Kami memahami pentingnya ketepatan waktu. Tim kami bekerja dengan efisien untuk memastikan pesanan Anda selesai tepat waktu tanpa mengorbankan kualitas.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="card-icon">✅</div>
+                    <h3>Kualitas Terjamin</h3>
+                    <p>Kami hanya menggunakan bahan berkualitas tinggi dan teknik produksi terbaik untuk memastikan produk kami tahan lama dan nyaman dipakai.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="card-icon">❤️</div>
+                    <h3>Pelayanan Terbaik</h3>
+                    <p>Kepuasan pelanggan adalah prioritas kami. Tim customer service kami siap membantu Anda dari proses konsultasi hingga pengiriman produk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container-max">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="big-number">500+</div>
+                    <div class="stat-title">Klien Puas</div>
+                    <p class="stat-desc">Telah mempercayakan kebutuhan kaos custom mereka kepada kami</p>
+                </div>
+                <div class="stat-card">
+                    <div class="big-number">10K+</div>
+                    <div class="stat-title">Produk Terjual</div>
+                    <p class="stat-desc">Kaos custom berkualitas telah kami produksi dan kirimkan</p>
+                </div>
+                <div class="stat-card">
+                    <div class="big-number">100%</div>
+                    <div class="stat-title">Kepuasan Pelanggan</div>
+                    <p class="stat-desc">Komitmen kami untuk memberikan layanan dan produk terbaik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container-max">
+            <h2 class="section-title-lg">Pertanyaan Umum</h2>
+            <p class="section-subtitle">Beberapa pertanyaan yang sering ditanyakan oleh pelanggan kami</p>
+            <div class="underline"></div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>Berapa lama waktu pengerjaan?</h3>
+                    <p>Waktu pengerjaan tergantung pada jumlah pesanan dan tingkat kesulitan desain. Untuk pesanan standar, biasanya membutuhkan waktu 7-14 hari kerja setelah desain disetujui dan DP dibayarkan.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Apakah ada minimal order?</h3>
+                    <p>Ya, minimal order untuk kaos custom adalah 24 pcs. Untuk jumlah yang lebih sedikit, silakan hubungi tim customer service kami untuk informasi lebih lanjut.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Bagaimana cara melakukan pemesanan?</h3>
+                    <p>Anda dapat menghubungi kami melalui WhatsApp atau telepon untuk konsultasi awal. Setelah itu, kirimkan desain atau konsep yang Anda inginkan. Tim kami akan memberikan penawaran harga berdasarkan spesifikasi pesanan Anda.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Apakah bisa request sample terlebih dahulu?</h3>
+                    <p>Ya, kami menyediakan layanan sample dengan biaya tertentu. Sample ini dapat dikreditkan ke pesanan Anda jika Anda melanjutkan dengan pesanan dalam jumlah besar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container-max">
+            <h2>Siap Memesan Kaos Custom?</h2>
+            <p>Hubungi kami sekarang untuk konsultasi dan penawaran terbaik</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-light">Cara Pesan</a>
+                <a href="https://wa.me/6282114984008" target="_blank" class="btn btn-whatsapp">HUBUNGI MARKETING</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-max">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Tentang Kami</h3>
+                    <p>sepuluh sebelas rumah produksi adalah vendor kaos, polo dan seragam custom terpercaya asal Bandung dengan pengalaman lebih dari 2 tahun dalam bidang garmen.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Kontak</h3>
+                    <p>📍 JL. H. TJARDA NO 11, SUKAPADA, KEC, CIBEUNYING KIDUL KOTA BANDUNG</p>
+                    <p>📞 0851-2100-9651</p>
+                    <p>📧 sepuluhsebelasrumahproduksi@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat: 08.00 - 17.00</p>
+                    <p>Sabtu: 08.00 - 15.00</p>
+                    <p>Minggu: Tutup</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 sepuluh sebelas rumah produksi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

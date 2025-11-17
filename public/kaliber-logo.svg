@@ -1,0 +1,8 @@
+<svg width="150" height="60" viewBox="0 0 150 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <circle cx="30" cy="20" r="15" fill="white"/>
+    <path d="M25 20C25 17.5 27.5 15 30 15C32.5 15 35 17.5 35 20C35 22.5 32.5 25 30 25C27.5 25 25 22.5 25 20Z" stroke="white" strokeWidth="1"/>
+    <text x="50" y="20" fontFamily="Arial" fontSize="16" fontWeight="bold" fill="white">SEPULUHSEBELAS</text>
+    <text x="50" y="35" fontFamily="Arial" fontSize="8" fill="white">CLOTHING MANUFACTURE</text>
+  </g>
+</svg>
